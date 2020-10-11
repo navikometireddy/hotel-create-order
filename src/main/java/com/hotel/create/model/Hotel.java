@@ -4,6 +4,7 @@ import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 
 @Entity
@@ -23,9 +24,11 @@ public class Hotel {
 	private String id;
 
 	@Column(name = "hotel_id")
+	@NotEmpty(message = "Please provide a id")
 	private String hotelId;
 
 	@Column(name = "hotel_name")
+	@NotEmpty(message = "Please provide a hotelname")
 	private String hotelName;
 
 	@Column(name = "check_in_date")
