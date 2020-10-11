@@ -1,6 +1,6 @@
 # hotel-create-order
 * please clone the code in to your local
-* change the database uname/pwd according to your local
+* change the database uname/pwd according to your local mysql credentials
 * use the command to run mvn spring-boot:run 
 ###### Database structure
 
