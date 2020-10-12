@@ -12,6 +12,28 @@ use postman to send a request for token http://localhost:8080/createOrder please
 
 ![db](images/postman.png)
 
+###### Payload
+
+{
+    "hotelId": "002",
+    "hotelName": "TUNE",
+    "checkInDate": "2020-10-10T15:20:36+08:00",
+    "checkOutDate": "2020-10-11T15:20:36+08:00",
+    "customer": {
+        "customerName": "09bad10a-0947-11eb-8b82-00163e000087",
+        "email": "abc@gmail.com",
+        "mobileNumber": "01123445044",
+        "state": "KL",
+        "country": "Malaysia",
+        "postalCode": "57100"
+    },
+    "room": {
+        "roomNumber": "00",
+        "numberOfGuests": "2",
+        "floor": "2"
+    }
+}
+
 ######TestCoverage
 
 ![db](images/test.png)
