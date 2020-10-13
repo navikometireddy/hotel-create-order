@@ -13,7 +13,12 @@ public class CreateOrderServiceImpl implements CreateOrderService {
     @Autowired
     private CreateOrderRepository createOrderRepository;
 
-
+    /**
+     *
+     * @param req
+     * @return boolean
+     * @throws Exception
+     */
     @Transactional
     public boolean createOrder(Hotel req) throws Exception {
         try {
